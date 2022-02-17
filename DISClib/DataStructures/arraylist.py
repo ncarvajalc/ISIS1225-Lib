@@ -41,7 +41,7 @@ assert config
 """
 
 
-def newList(cmpfunction, key, filename, delim):
+def newList(cmpfunction, module, key, filename, delim):
     """Crea una lista vacia.
 
     Args:
@@ -56,7 +56,8 @@ def newList(cmpfunction, key, filename, delim):
                'size': 0,
                'type': 'ARRAY_LIST',
                'cmpfunction': cmpfunction,
-               'key': key
+               'key': key,
+               'datastructure': module
                }
 
     if(cmpfunction is None):
@@ -378,6 +379,7 @@ def subList(lst, pos, numelem):
                   'size': 0,
                   'type': 'ARRAY_LIST',
                   'key': lst['key'],
+                  'datastructure': lst['datastructure'],
                   'cmpfunction': lst['cmpfunction']}
         elem = pos-1
         cont = 1

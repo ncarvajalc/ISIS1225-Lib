@@ -52,7 +52,10 @@ def stack():
 
 
 def test_pushElements(stack, books):
+    assert st.size(stack) == 0
     st.push(stack, books[5])
+    assert st.size(stack) == 1
+    assert st.top(stack) == books[5]
     st.push(stack, books[6])
     st.push(stack, books[3])
     st.push(stack, books[10])
@@ -63,6 +66,7 @@ def test_pushElements(stack, books):
     st.push(stack, books[7])
     st.push(stack, books[9])
     assert st.size(stack) == 10
+    assert st.top(stack) == books[9]
     while not st.isEmpty(stack):
         element = st.pop(stack)
         print(element)

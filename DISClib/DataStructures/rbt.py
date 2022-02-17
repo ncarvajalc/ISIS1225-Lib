@@ -422,7 +422,7 @@ def keys(rbt, keylo, keyhi):
         Exception
     """
     try:
-        lstkeys = lt.newList('SINGLELINKED', rbt['cmpfunction'])
+        lstkeys = lt.newList('SINGLE_LINKED', rbt['cmpfunction'])
         lstkeys = keysRange(rbt['root'], keylo, keyhi, lstkeys,
                             rbt['cmpfunction'])
         return lstkeys
@@ -445,7 +445,7 @@ def values(rbt, keylo, keyhi):
         Exception
     """
     try:
-        lstvalues = lt.newList('SINGLELINKED', rbt['cmpfunction'])
+        lstvalues = lt.newList('SINGLE_LINKED', rbt['cmpfunction'])
         lstvalues = valuesRange(rbt['root'], keylo, keyhi, lstvalues,
                                 rbt['cmpfunction'])
         return lstvalues

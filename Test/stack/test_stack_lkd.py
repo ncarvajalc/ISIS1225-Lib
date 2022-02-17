@@ -47,7 +47,7 @@ def books():
 
 @pytest.fixture
 def stack():
-    stack = st.newStack('SINGLE_LINKED')
+    stack = st.newStack()
     return stack
 
 
