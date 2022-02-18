@@ -31,7 +31,7 @@ assert config
 
 """
   Este módulo implementa una estructura de datos lineal mediante una lista
-  encadenada doblemete para almacenar una colección de elementos.
+  encadenada doblemente para almacenar una colección de elementos.
   Los elementos se cuentan desde la posición 1.
 """
 
