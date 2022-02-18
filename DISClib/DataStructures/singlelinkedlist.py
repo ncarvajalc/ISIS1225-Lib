@@ -182,8 +182,9 @@ def firstElement(lst):
         Exception
     """
     try:
-        if 'info' in lst['first']:
+        if lst['first'] is not None:
             return lst['first']['info']
+        return None
     except Exception as exp:
         error.reraise(exp, 'singlelinkedlist->fisrtElement: ')
 
@@ -199,8 +200,9 @@ def lastElement(lst):
         Exception
     """
     try:
-        if 'info' in lst['last']:
+        if lst['last'] is not None:
             return lst['last']['info']
+        return None
     except Exception as exp:
         error.reraise(exp, 'singlelinkedlist->lastElement: ')
 
@@ -342,9 +344,14 @@ def insertElement(lst, element, pos):
     """
     try:
         new_node = node.newSingleNode(element)
-        if (pos == 1):
+        if (lst['size'] == 0):
+            lst['first'] = new_node
+            lst['last'] = new_node
+
+        elif ((lst['size'] > 0) and (pos == 1)):
             new_node['next'] = lst['first']
             lst['first'] = new_node
+
         else:
             cont = 1
             prev = lst['first']
@@ -355,6 +362,7 @@ def insertElement(lst, element, pos):
                 cont += 1
             new_node['next'] = current
             prev['next'] = new_node
+
         lst['size'] += 1
         return lst
     except Exception as exp:
