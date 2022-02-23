@@ -46,7 +46,8 @@ def newList(datastructure='SINGLE_LINKED',
 
     Args:
         datastructure:  Tipo de estructura de datos a utilizar para implementar
-        la lista. Los tipos posibles pueden ser: ARRAY_LIST y SINGLE_LINKED.
+        la lista. Los tipos posibles pueden ser: ARRAY_LIST,
+        SINGLE_LINKED y DOUBLE_LINKED.
 
         cmpfunction: Función de comparación para los elementos de la lista.
         Si no se provee función de comparación se utiliza la función
@@ -71,12 +72,12 @@ def newList(datastructure='SINGLE_LINKED',
     try:
         module = listSelector(datastructure)
         lst = module.newList(
-                             cmpfunction,
-                             module,
-                             key,
-                             filename,
-                             delimiter
-                             )
+            cmpfunction,
+            module,
+            key,
+            filename,
+            delimiter
+        )
         return lst
     except Exception as exp:
         error.reraise(exp, 'TADList->newList: ')
