@@ -386,6 +386,10 @@ def iterator(lst):
         error.reraise(exp, 'List->Iterator: ')
 
 
+"""
+Selector dinamico de la estructua de datos solicitada
+"""
+
 switch_module = {
     "ARRAY_LIST": ".arraylist",
     "SINGLE_LINKED": ".singlelinkedlist",
@@ -394,6 +398,10 @@ switch_module = {
 
 
 def listSelector(datastructure):
+    """
+    Carga dinamicamente el import de la estructura de datos
+    seleccionada
+    """
     ds = switch_module.get(datastructure)
     module = importlib.import_module(ds, package="DISClib.DataStructures")
     return module

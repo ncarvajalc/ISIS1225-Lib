@@ -46,7 +46,7 @@ Algorithms, 4th Edition
 # ________________________________________________________________________
 
 
-def newMap(cmpfunction):
+def newMap(omaptype, cmpfunction, datastructure):
     """
     Crea una tabla de simbolos ordenada.
     Args:
@@ -59,7 +59,8 @@ def newMap(cmpfunction):
     try:
         rbt = {'root': None,
                'cmpfunction': None,
-               'type': 'RBT'}
+               'type': omaptype,
+               'datastructure': datastructure}
 
         if(cmpfunction is None):
             rbt['cmpfunction'] = defaultfunction
