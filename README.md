@@ -41,10 +41,11 @@ DISCLib is a Python library for teaching data structure and algorithms at Univer
 [View Demo and Examples][demo-url] · [Report Bug][bugs-url] · [Request Feature][issues-url]
 
 <!-- PROJECT CONTENT -->
-Table of Contents (up to date)
-
+**Table of Contents (up to date)
+**
 - [DISCLib](#disclib)
   - [About The Project](#about-the-project)
+    - [Structure](#structure)
     - [Built With](#built-with)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -62,6 +63,12 @@ Working!!!
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `ISIS1225DEVS`, `ISIS1225-Lib`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
+
+[Back to top](#disclib)
+
+### Structure
+<!-- TODO to write section -->
+Working!!!
 
 [Back to top](#disclib)
 
@@ -199,10 +206,10 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 <!-- TODO to write section -->
 Working!!!
 
-<!-- 
-* []()
-* []()
-* []() -->
+
+* [Dario Correal](dariocorreal-url), Original author and main developer.
+* [Santiago Arteaga](phillipus85-url), Contributor and administrator. 
+* [Luis Florez](le99-url), Contributor and supporter.
 
 [Back to top](#disclib)
 
@@ -226,3 +233,7 @@ Working!!!
 [bugs-url]: https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues
 [issues-url]: https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues
 [gnu-url]: http://www.gnu.org/licenses/
+<!-- contributors  -->
+[dariocorreal-url]: https://github.com/dariocorreal
+[phillipus85-url]: https://github.com/phillipus85
+[le99-url]: https://github.com/le99
