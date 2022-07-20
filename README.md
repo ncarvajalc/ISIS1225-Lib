@@ -207,9 +207,9 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 Working!!!
 
 
-* [Dario Correal](dariocorreal-url), Original author and main developer.
-* [Santiago Arteaga](phillipus85-url), Contributor and administrator. 
-* [Luis Florez](le99-url), Contributor and supporter.
+* [Dario Correal][dariocorreal-url], Original author and main developer.
+* [Santiago Arteaga][phillipus85-url], Contributor and administrator. 
+* [Luis Florez][le99-url], Contributor and supporter.
 
 [Back to top](#disclib)
 
