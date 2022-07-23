@@ -17,39 +17,36 @@ https://github.com/othneildrew/Best-README-Template
 [![Issues][issues-shield]][issues-url]
 [![License][license-shield]][license-url]
 
-DISCLib is a Python library for teaching data structure and algorithms at Universidad de los Andes, Faculty of Engineering, Department of Systems and Computer Engineer #DISC.
+**DISCLib** es una librería Python no orientada a objetos para enseñar los conceptos de estructuras de datos y algoritmos en la Universidad de los Andes, desarrollada por los profesores y personal de la Facultad de Ingeniería, Departamento de Sistemas e Ingeniería Informática #DISC.
 
-[View Demo and Examples][demo-url] · [Report Bug][bugs-url] · [Request Feature][issues-url]
+[Ver Demo y Ejemplos][demo-url] · [Informar Errores][bugs-url] · [Solicitar Funcionalidad][issues-url]
 
 <!-- PROJECT CONTENT -->
-<!-- #TODO to translate -->
-TRABAJANDO!
-**Table of Contents (up to date)**
-<!-- - [DISCLib](#disclib)
-  - [About The Project](#about-the-project)
-    - [Structure](#structure)
-    - [Built With](#built-with)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
-  - [Contact and support](#contact-and-support)
-  - [Roadmap](#roadmap)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Authors and acknowledgment](#authors-and-acknowledgment) -->
+**Tabla de contenido (actualizada)**
+- [DISCLib](#disclib)
+  - [Acerca del Proyecto](#acerca-del-proyecto)
+    - [Estructura](#estructura)
+    - [Implementación](#implementación)
+  - [Introducción](#introducción)
+    - [Prerrequisitos](#prerrequisitos)
+    - [Instalación](#instalación)
+  - [Uso](#uso)
+  - [Contacto y Soporte] (#contacto-y-soporte)
+  - [Hoja de Ruta](#hoja-de-ruta)
+  - [Contribuir](#contribuir)
+  - [Licencia](#licencia)
+  - [Autores y Reconocimiento](#autores-y-reconocimiento)
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
-<!-- #TODO to translate -->
-TRABAJANDO!
+## Acerca del Proyecto
 
-<!-- This project was created as a pedagogical library to teach students in the Computer Science en Systems program at Universidad de los Andes and others in the engineering faculty to use and understand data structures and its related algorithm. This includes Arrays, Lists, Maps, Ordered Maps, Binary Search Trees (BST), Red Black Trees (RBT) and Graphs.
+Este proyecto se creó como una librería pedagógica para enseñar a los estudiantes de pregrado de la facultad de Ingenieria y en particular del programa de Ingeniería en Sistemas e Informática de la Universidad de los Andes para usar y entender las estructuras de datos y sus algoritmos relacionados. Esto incluye estructuras tales como los arreglos, las listas, los mapas, los mapas ordenados, los árboles de búsqueda binarios (BST), árboles rojos negros (RBT) y los grafos.
 
-**IMPORTANT** This is a work in progress. The project is mainly focused as a teaching tool for batchellor college students and is not intended to be used as a full-functional library. Plus, the DISCLib design is not Object Oriented Oriented. -->
+**IMPORTANTE** Este es un trabajo en progreso. El proyecto se centra principalmente como una herramienta pedagógica para estudiantes universitarios y no está destinado a ser utilizado como una biblioteca completamente funcional.
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
-### Structure
+### Estructura
 <!-- #TODO to translate -->
 TRABAJANDO!
 <!-- 
@@ -131,35 +128,26 @@ Este directorio contiene todo el código de base que se entrega para el funciona
 -Test
 Este directorio contiene las pruebas realizadas a los TADs, Estructuras de Datos y Algoritmos. -->
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
-### Built With
+### Implementación
 <!-- #TODO to translate -->
 TRABAJANDO!
 
-<!-- This library was built with the following technologies:
-  * Mac OS` and `Windows 10` for operating system.
-  * `VS code` for the IDE.
-  * `Python 3.6` for the programming language.
-  * `Pytest` for the testing framework.
+Esta librería fue implementada con las siguientes tecnologías:
+  * `Mac OS` y `Windows 10` para el sistema operativo.
+  * `VS Code` para el IDE.
+  * `Python 3.6` para el lenguaje de programación.
+  * `Pytest` para librería de pruebas.
 
-As a design principle **DISClib** minimize the use of Python external libraries in its implementation.
+Como principio de diseño **DISClib** minimiza en su implementación el uso de librerías externas Python.
 
-Finally, **DISClib** works between `Python 3.6` and `Python 3.9` versions. -->
+Finalmente, **DISClib** funciona entre las versiones `Python 3.6` y `Python 3.9`.
 
-<!-- * [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com) -->
-
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Introducción
 <!-- #TODO to translate -->
 TRABAJANDO!
 
@@ -169,9 +157,9 @@ As the library is not Object Oriented, you need to import the library in your pr
 
 <!-- This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps. -->
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
-### Prerequisites
+### Prerrequisitos
 <!-- #TODO to translate -->
 TRABAJANDO!
 
@@ -190,9 +178,9 @@ To execute the tests in the `Test` folder, you need to install the `Pytest` pack
   ```sh
   npm install npm@latest -g
   ``` -->
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
-### Installation
+### Instalación
 <!-- #TODO to translate -->
 TRABAJANDO!
 
@@ -228,10 +216,10 @@ TRABAJANDO!
    const API_KEY = 'ENTER YOUR API';
    ``` -->
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Uso
 <!-- #TODO to translate -->
 TRABAJANDO!
 
@@ -251,30 +239,30 @@ To check the laboratories repositories, go to the following links:
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
 <!-- CONTACT -->
-## Contact and support
+## Contacto y Soporte
 <!-- #TODO to translate -->
 TRABAJANDO!
 
 <!-- For further information and contact, use the following links:
 
   * Official Repository [DISClib][disclib-url].
-  * Repository for [Demo and Examples][demo-url].
+  * Repository for [Demo y Ejemplos][demo-url].
   
 If you require further information, please contact us [via this email](mailto:isis1225@uniandes.edu.co) -->
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
 <!-- ROADMAP -->
-## Roadmap
+## Hoja de Ruta
 <!-- #TODO to translate -->
 TRABAJANDO!
 <!-- 
 The Road so far lead us to complete the following features:
 
-* [ ] To include examples for all modules in the repository [Demo and Examples][demo-url].
+* [ ] To include examples for all modules in the repository [Demo y Ejemplos][demo-url].
 * [ ] To clean some code and make it more readable.
 * [ ] To standarize the functions and variables names throughout the library.
 * [ ] To improve the library the documentation.
@@ -282,10 +270,10 @@ The Road so far lead us to complete the following features:
 
 See the [open issues](https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues) for a full list of proposed features (and known issues). -->
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contribuir
 <!-- #TODO to translate -->
 TRABAJANDO!
 
@@ -301,10 +289,10 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request -->
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
 <!-- LICENSE -->
-## License
+## Licencia
 <!-- #TODO to translate -->
 TRABAJANDO!
 
@@ -315,10 +303,10 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more information go to [GNU ORG][gnu-url]. -->
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
 <!-- ACKNOWLEDGMENTS -->
-## Authors and acknowledgment
+## Autores y Reconocimiento
 <!-- #TODO to translate -->
 TRABAJANDO!
 
@@ -326,7 +314,7 @@ TRABAJANDO!
 * [Santiago Arteaga][phillipus85-url] is a contributor and repository administrator. 
 * [Luis Florez][le99-url] is a contributor and developed examples and tutorials for the library. -->
 
-[Back to top](#disclib)
+[Volver al inicio](#disclib)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

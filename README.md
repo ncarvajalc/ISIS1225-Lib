@@ -17,7 +17,7 @@ https://github.com/othneildrew/Best-README-Template
 [![Issues][issues-shield]][issues-url]
 [![License][license-shield]][license-url]
 
-DISCLib is a Python library for teaching data structure and algorithms at Universidad de los Andes, Faculty of Engineering, Department of Systems and Computer Engineer #DISC.
+**DISCLib** is a Non-Object-Oriented Python library for teaching data structure and algorithms at Universidad de los Andes, developed by professors and staff in the Faculty of Engineering, Department of Systems and Computer Engineer #DISC.
 
 [View Demo and Examples][demo-url] · [Report Bug][bugs-url] · [Request Feature][issues-url]
 
@@ -29,6 +29,7 @@ DISCLib is a Python library for teaching data structure and algorithms at Univer
     - [Built With](#built-with)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
   - [Usage](#usage)
   - [Contact and support](#contact-and-support)
   - [Roadmap](#roadmap)
@@ -39,12 +40,13 @@ DISCLib is a Python library for teaching data structure and algorithms at Univer
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was created as a pedagogical library to teach students in the Computer Science en Systems program at Universidad de los Andes and others in the engineering faculty to use and understand data structures and its related algorithm. This includes Arrays, Lists, Maps, Ordered Maps, Binary Search Trees (BST), Red Black Trees (RBT) and Graphs.
+This project was created as a pedagogical library to teach the undergraduate students in the Systems and Computer Engineer program at Universidad de los Andes and others in the faculty to use and understand data structures and its related algorithm. This includes Arrays, Lists, Maps, Ordered Maps, Binary Search Trees (BST), Red Black Trees (RBT) and Graphs.
 
-**IMPORTANT** This is a work in progress. The project is mainly focused as a teaching tool for batchellor college students and is not intended to be used as a full-functional library. Plus, the DISCLib design is not Object Oriented Oriented.
+**IMPORTANT** This is a work in progress. The project is mainly focused as a teaching tool for undergraduate college students and is not intended to be used as a full-functional library.
 
 [Back to top](#disclib)
 
+<!-- STRUCTURE -->
 ### Structure
 
 The project is divided into four main parts:
@@ -113,10 +115,11 @@ The project is divided into four main parts:
 
 [Back to top](#disclib)
 
+<!-- BUILT WITH -->
 ### Built With
 
 This library was built with the following technologies:
-  * Mac OS` and `Windows 10` for operating system.
+  * `Mac OS` and `Windows 10` for operating system.
   * `VS code` for the IDE.
   * `Python 3.6` for the programming language.
   * `Pytest` for the testing framework.
@@ -138,6 +141,7 @@ As the library is not Object Oriented, you need to import the library in your pr
 To get a local copy up and running follow these simple example steps. -->
 [Back to top](#disclib)
 
+<!-- PREREQUISITES -->
 ### Prerequisites
 
 As a design principle **DISClib** minimize the use of Python external libraries in its implementation.
@@ -150,6 +154,7 @@ To execute the tests in the `Test` folder, you need to install the `Pytest` pack
 
 [Back to top](#disclib)
 
+<!-- INSTALLATION -->
 ### Installation
 
 For the moment the **DISClib** is available as a local dependency in your project. To install it you can follow the next steps:
