@@ -224,9 +224,19 @@ For the moment the **DISClib** is available as a local dependency in your projec
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-DISCLib is a library that provides a set of ADT's and data structures to support the development and use of algorithms. Its intended as a teaching tool in the course [ISIS1225-Estructuras de Datos y Algoritmos][uniandes-url].
+DISCLib is a library that provides a set of ADT's to support the development and use of algorithms. Its intended as a teaching tool in the course [ISIS1225-Estructuras de Datos y Algoritmos][uniandes-url].
 
-To check the laboratories repositories, go to the [ISIS-1225 GitHub Organization][organization-url]. And more examples and source code details, please refer to the [View Demo and Examples][demo-url]
+To check the laboratories repositories, go to the following links:
+
+  * [ISIS1225-SampleMVC][sample-mvc-url] MVC introduction laboratory.
+  * [ISIS1225-SampleConflicts][sample-conflicts-url] GitHub conflicts managment laboratory.
+  * [ISIS1225-SampleList][sample-list-url] ADT List laboratory.
+  * [ISIS1225-SampleSorts][sample-sort-url] ADT List sorting algorithms laboratory.
+  * [ISIS1225-sampleMap][sample-map-url] ADT Map laboratory.
+  * [ISIS1225-SampleCollision][sample-collision-url] ADT Ordered Map laboratory.
+  * [ISIS1225-SampleTree][sample-tree-url] ADT Ordered Map (BST and RBT) laboratory.
+  * [ISIS1225-sampleGraph][sample-graph-url] ADT Graph laboratory.
+  * [ISIS1225-SampleAlgorithm][sample-algorithm-url] ADT Graph algorithms laboratory.
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 
@@ -249,7 +259,9 @@ If you require further information, please contact us [via this email](mailto:is
 The Road so far
 
 * [ ] To include examples for all modules in the repository [Demo and Examples][demo-url].
-* [ ] Improve the documentation of the library.
+* [ ] To clean some code and make it more readable.
+* [ ] To standarize the functions and variables names throughout the library.
+* [ ] To improve the library the documentation.
 * [ ] To implement the Adjacency Matrix data structure for the ADT Graph.
 
 See the [open issues](https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues) for a full list of proposed features (and known issues).
@@ -319,3 +331,13 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 [dariocorreal-url]: https://github.com/dariocorreal
 [phillipus85-url]: https://github.com/phillipus85
 [le99-url]: https://github.com/le99
+<!-- EDA lab repository -->
+[sample-mvc-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleMVC
+[sample-conflicts-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleConflicts
+[sample-list-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleList
+[sample-sort-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleSorts
+[sample-map-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleMap
+[sample-collision-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleCollision
+[sample-tree-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleTree
+[sample-graph-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleGraph
+[sample-algorithm-url]: https://github.com/ISIS1225DEVS/ISIS1225-SampleAlgorithm
