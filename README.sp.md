@@ -1,4 +1,4 @@
-# DISCLib
+﻿# DISCLib
 <!-- based on the repo from 
 https://github.com/othneildrew/Best-README-Template
 
@@ -22,8 +22,10 @@ DISCLib is a Python library for teaching data structure and algorithms at Univer
 [View Demo and Examples][demo-url] · [Report Bug][bugs-url] · [Request Feature][issues-url]
 
 <!-- PROJECT CONTENT -->
+<!-- #TODO to translate -->
+TRABAJANDO!
 **Table of Contents (up to date)**
-- [DISCLib](#disclib)
+<!-- - [DISCLib](#disclib)
   - [About The Project](#about-the-project)
     - [Structure](#structure)
     - [Built With](#built-with)
@@ -34,19 +36,23 @@ DISCLib is a Python library for teaching data structure and algorithms at Univer
   - [Roadmap](#roadmap)
   - [Contributing](#contributing)
   - [License](#license)
-  - [Authors and acknowledgment](#authors-and-acknowledgment)
+  - [Authors and acknowledgment](#authors-and-acknowledgment) -->
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-This project was created as a pedagogical library to teach students in the Computer Science en Systems program at Universidad de los Andes and others in the engineering faculty to use and understand data structures and its related algorithm. This includes Arrays, Lists, Maps, Ordered Maps, Binary Search Trees (BST), Red Black Trees (RBT) and Graphs.
+<!-- This project was created as a pedagogical library to teach students in the Computer Science en Systems program at Universidad de los Andes and others in the engineering faculty to use and understand data structures and its related algorithm. This includes Arrays, Lists, Maps, Ordered Maps, Binary Search Trees (BST), Red Black Trees (RBT) and Graphs.
 
-**IMPORTANT** This is a work in progress. The project is mainly focused as a teaching tool for batchellor college students and is not intended to be used as a full-functional library. Plus, the DISCLib design is not Object Oriented Oriented.
+**IMPORTANT** This is a work in progress. The project is mainly focused as a teaching tool for batchellor college students and is not intended to be used as a full-functional library. Plus, the DISCLib design is not Object Oriented Oriented. -->
 
 [Back to top](#disclib)
 
 ### Structure
-
+<!-- #TODO to translate -->
+TRABAJANDO!
+<!-- 
 The project is divided into four main parts:
 1. [DISClib](./DISClib) Root folder with the library implementation.
     1. [ADT](./DISClib/ADT) Folder with the main Abstract Data Types (ADT) implemented in the library.
@@ -109,13 +115,29 @@ The project is divided into four main parts:
     7. [MinPQ](./Test/minpq) Scripts to test the ADT Min Priority Queue.
     8. [Graph](./Test/graph) Scripts to test the ADT Graph.
 
-**NOTE:** the `config.py` scripts in the API are used to configure library's  build path and allows the Python interpreter to find the relative path in any condition.
+**NOTE:** the `config.py` scripts in the API are used to configure library's  build path and allows the Python interpreter to find the relative path in any condition. -->
+
+<!-- 
+#ISIS1225 - Librerias de soporte
+
+Este proyecto contiene los Tipos abstractos de datos, estructuras de datos y algoritmos requeridos por el curso ISIS1225-Estructuras de Datos y Algoritmos
+
+-Lib
+Este directorio contiene todo el código de base que se entrega para el funcionamiento del curso.  Dentro de este directorio encuentran:
+    |-- ADT:  Directorio con los Tipos Abstractos de Datos del curso
+    |--DataStructures: Directorio con todas las estructuras de datos y archivos auxiliares para su     correcto funcionamiento
+    |--Algorithms: Implementación de los algoritmos vistos en el curso (por ejemplo algoritmos de ordenamiento)
+    |-- Utils: Funciones auxiliares para el funcionamiento de los TADs y estructuras de datos
+-Test
+Este directorio contiene las pruebas realizadas a los TADs, Estructuras de Datos y Algoritmos. -->
 
 [Back to top](#disclib)
 
 ### Built With
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-This library was built with the following technologies:
+<!-- This library was built with the following technologies:
   * Mac OS` and `Windows 10` for operating system.
   * `VS code` for the IDE.
   * `Python 3.6` for the programming language.
@@ -123,36 +145,58 @@ This library was built with the following technologies:
 
 As a design principle **DISClib** minimize the use of Python external libraries in its implementation.
 
-Finally, **DISClib** works between `Python 3.6` and `Python 3.9` versions.
+Finally, **DISClib** works between `Python 3.6` and `Python 3.9` versions. -->
+
+<!-- * [Next.js](https://nextjs.org/)
+* [React.js](https://reactjs.org/)
+* [Vue.js](https://vuejs.org/)
+* [Angular](https://angular.io/)
+* [Svelte](https://svelte.dev/)
+* [Laravel](https://laravel.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com) -->
 
 [Back to top](#disclib)
 
 <!-- GETTING STARTED -->
 ## Getting Started
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-This section contains the steps to get started with the library. As is the case with any other library, you need to install the library and then import it in your project.
+<!-- This section contains the steps to get started with the library. As is the case with any other library, you need to install the library and then import it in your project.
 
-As the library is not Object Oriented, you need to import the library in your project as a module using the following steps:
+As the library is not Object Oriented, you need to import the library in your project as a module using the following steps: -->
 
 <!-- This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps. -->
 [Back to top](#disclib)
 
 ### Prerequisites
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-As a design principle **DISClib** minimize the use of Python external libraries in its implementation.
+<!-- As a design principle **DISClib** minimize the use of Python external libraries in its implementation.
 
 To execute the tests in the `Test` folder, you need to install the `Pytest` package.
 
   ```bash
   pip install pytest
-  ```
+  ``` -->
 
+<!-- This is an example of how to list things you need to use the software and how to install them.
+
+* npm
+
+  ```sh
+  npm install npm@latest -g
+  ``` -->
 [Back to top](#disclib)
 
 ### Installation
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-For the moment the **DISClib** is available as a local dependency in your project. To install it you can follow the next steps:
+<!-- For the moment the **DISClib** is available as a local dependency in your project. To install it you can follow the next steps:
 
 1. Create a new project folder.
 2. Clone the repo with the command:
@@ -170,14 +214,28 @@ For the moment the **DISClib** is available as a local dependency in your projec
     from DISClib.ADT import map as mp
    ```
 
-6. Start coding!
+6. Start coding! -->
+
+<!-- 3. Install NPM packages
+
+   ```sh
+   npm install
+   ```
+
+4. Enter your API in `config.js`
+
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ``` -->
 
 [Back to top](#disclib)
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-DISCLib is a library that provides a set of ADT's to support the development and use of algorithms. Its intended as a teaching tool in the course [ISIS1225-Estructuras de Datos y Algoritmos][uniandes-url].
+<!-- DISCLib is a library that provides a set of ADT's to support the development and use of algorithms. Its intended as a teaching tool in the course [ISIS1225-Estructuras de Datos y Algoritmos][uniandes-url].
 
 To check the laboratories repositories, go to the following links:
 
@@ -189,24 +247,31 @@ To check the laboratories repositories, go to the following links:
   * [ISIS1225-SampleCollision][sample-collision-url] ADT Ordered Map laboratory.
   * [ISIS1225-SampleTree][sample-tree-url] ADT Ordered Map (BST and RBT) laboratory.
   * [ISIS1225-sampleGraph][sample-graph-url] ADT Graph laboratory.
-  * [ISIS1225-SampleAlgorithm][sample-algorithm-url] ADT Graph algorithms laboratory.
+  * [ISIS1225-SampleAlgorithm][sample-algorithm-url] ADT Graph algorithms laboratory. -->
+
+<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 
 [Back to top](#disclib)
 
 <!-- CONTACT -->
 ## Contact and support
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-For further information and contact, use the following links:
+<!-- For further information and contact, use the following links:
 
   * Official Repository [DISClib][disclib-url].
   * Repository for [Demo and Examples][demo-url].
   
-If you require further information, please contact us [via this email](mailto:isis1225@uniandes.edu.co)
+If you require further information, please contact us [via this email](mailto:isis1225@uniandes.edu.co) -->
 
 [Back to top](#disclib)
 
 <!-- ROADMAP -->
 ## Roadmap
+<!-- #TODO to translate -->
+TRABAJANDO!
+<!-- 
 The Road so far lead us to complete the following features:
 
 * [ ] To include examples for all modules in the repository [Demo and Examples][demo-url].
@@ -215,13 +280,16 @@ The Road so far lead us to complete the following features:
 * [ ] To improve the library the documentation.
 * [ ] To implement the Adjacency Matrix data structure for the ADT Graph.
 
-See the [open issues](https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues) for a full list of proposed features (and known issues). -->
 
 [Back to top](#disclib)
 
 <!-- CONTRIBUTING -->
 ## Contributing
+<!-- #TODO to translate -->
+TRABAJANDO!
 
+<!-- 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
@@ -231,28 +299,32 @@ Don't forget to give the project a star! Thanks again!
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+5. Open a Pull Request -->
 
 [Back to top](#disclib)
 
 <!-- LICENSE -->
 ## License
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-Copyright 2020, Departamento de sistemas y Computación, Universidad de Los Andes.
+<!-- Copyright 2020, Departamento de sistemas y Computación, Universidad de Los Andes.
 Developed for the class _"ISIS1225 - Estructuras de Datos y Algoritmos"_ or _"ISIS1225 - Data Structure and Algorithms"_ in english.
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more information go to [GNU ORG][gnu-url].
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more information go to [GNU ORG][gnu-url]. -->
 
 [Back to top](#disclib)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Authors and acknowledgment
+<!-- #TODO to translate -->
+TRABAJANDO!
 
-* [Dario Correal][dariocorreal-url] is the original author and main developer of the library.
+<!-- * [Dario Correal][dariocorreal-url] is the original author and main developer of the library.
 * [Santiago Arteaga][phillipus85-url] is a contributor and repository administrator. 
-* [Luis Florez][le99-url] is a contributor and developed examples and tutorials for the library.
+* [Luis Florez][le99-url] is a contributor and developed examples and tutorials for the library. -->
 
 [Back to top](#disclib)
 
