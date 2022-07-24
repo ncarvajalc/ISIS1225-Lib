@@ -46,77 +46,75 @@ Este proyecto se creó como una librería pedagógica para enseñar a los estudi
 
 [Volver al inicio](#disclib)
 
+<!-- STRUCTURE -->
 ### Estructura
-<!-- #TODO to translate -->
-TRABAJANDO!
-<!-- 
-The project is divided into four main parts:
 
-1. [DISClib](./DISClib) Root folder with the library implementation.
+El proyecto consta de cuatro partes principales:
+1. [DISClib](./DISClib) Carpeta principal con la implementación de la librería.
+    1. [ADT](./DISClib/ADT) Carpeta con los Tipos de Datos Abstractos (ADT) más importantes implementados para la librería.
+        1. [List](./DISClib/ADT/list.py) Script implementando las listas ADT en la librería, configurables por las estructuras Arreglos (Array List), Lista Sencillamente Encadenada (Single Linked List) y Listas Doblemente Encadenada (Double Linked List).
+        2. [Queue](./DISClib/ADT/queue.py) Script que implementa el ADT Cola basada en el ADT Lista.
+        3. [Stack](./DISClib/ADT/stack.py) Script que implementa el ADT Pila basada en el ADT lista.
+        4. [Map](./DISClib/ADT/map.py) Script implementando el ADT Mapa utilizando Tablas Hash como estructuras de datos, configurables por método de manejo de colisiones a Sondeo Lineal (Linear Probing) y Encadenamiento Separado (Separate Chaining).
+        5. [Ordered Map](./DISClib/ADT/orderedmap.py) Script que implementa los ADT de mapas ordenados utilizando los árboles binarios como estructuras de datos, configurables a Arboles Binarios de Búsqueda (binary search trees) o BST y Arboles Rojo-Negro (Red Black Tree) o RBT.
+        6. [MinPQ](./DISClib/ADT/minpq.py) Script que implementa el ADT para la cola de prioridad mínima utilizando las estructuras de datos de Montículo (Heap).
+        7. [Indexed MinPQ](./DISClib/ADT/indexminpq.py) Script que implementa el ADT para la cola de prioridad mínima indexada utilizando estructuras de datos de Montículo Indexado (Index Heap).
+        8. [Graph](./DISClib/ADT/graph.py) Script que implementa el ADT Grafo utilizando listas de adyacencia como estructuras de datos.
 
-    1. [ADT](./DISClib/ADT) Folder with the main Abstract Data Types (ADT) implemented in the library.
-        1. [List](./DISClib/ADT/list.py) Script implementing the ADT Lists in the library, configurable by Array List, Single Linked List and Double Linked List structures.
-        2. [Queue](./DISClib/ADT/queue.py) Script implementing the ADT queue based in the ADT List.
-        3. [Stack](./DISClib/ADT/stack.py) Script implementing the ADT stack based in the ADT List.
-        4. [Map](./DISClib/ADT/map.py) Script implementing the ADT Map using Hash Tables as data structures, configurable by collision handling method to Linear Probing and Separate Chaining.
-        5. [Ordered Map](./DISClib/ADT/orderedmap.py) Script implementing the ADT Ordered Maps using binary trees as data structures, configurable to Binary Search Trees (BST) and Red Black Tree (RBT).
-        6. [MinPQ](./DISClib/ADT/minpq.py) Script implementing the ADT Min Priority Queue using heap data structures.
-        7. [Indexed MinPQ](./DISClib/ADT/indexminpq.py) Script implementing the ADT Indexed Min Priority Queue using heap data structures.
-        8. [Graph](./DISClib/ADT/graph.py) Script implementing the ADT Graph using adjacency lists as data structures.
+    2. [Algorithms](./DISClib/Algorithms) Carpeta con los principales algoritmos implementados para procesar el contenido de los ADTs.
+        1. [Graphs](./DISClib/Algorithms/Graphs) Carpeta con los algoritmos para procesar los ADT grafos.
+            1. [DFS](./DISClib/Algorithms/Graphs/dfs.py) Script que implementa el algoritmo Búsqueda por Profundidad (Depth First Search) o DFS.
+            2. [BFS](./DISClib/Algorithms/Graphs/bfs.py) Script que implementa el algoritmo de Búsqueda por lo Ancho (Breath First Search) o BFS.
+            3. [DFO](./DISClib/Algorithms/Graphs/dfo.py) Script que implementa el algoritmo de ordenamiento topológico utilizando la búsqueda por profundidad topológica. También llamado Ordenamiento por profundidad (Depth First Order) o DFO.
+            4. [Cycles](./DISClib/Algorithms/Graphs/cycles.py) Script que implementa el algoritmo detectar los ciclos en un grafo.
+            5. [SCC](./DISClib/Algorithms/Graphs/scc.py) Script que implementa el algoritmo para detectar Componentes Fuertemente Conectados (SCC).
+            6. [Prim](./DISClib/Algorithms/Graphs/prim.py) Script que implementa el algoritmo de Prim.
+            7. [Dijkstra](./DISClib/Algorithms/Graphs/dijkstra.py) Script que implementa el algoritmo de Dijkstra.
+            8. [Bellman-Ford](./DISClib/Algorithms/Graphs/bellmanford.py) Script que implementa el algoritmo Bellman-Ford.
+        2. [Sorting](./DISClib/Algorithms/Sorting) Carpeta con las implementaciones de los algoritmos de ordenamiento utilizados en el ADT Lista.
+            1. [Selection Sort](./DISClib/Algorithms/Sorting/selectionsort.py) Script que implementa el algoritmo de Ordenamiento por Selección (Selection Sort).
+            2. [Insertion Sort](./DISClib/Algorithms/Sorting/insertionsort.py) Script que implementa el algoritmo de Ordenamiento por Inserción (Insertion Sort).
+            3. [Shell Sort](./DISClib/Algorithms/Sorting/shellsort.py) Script que implementa el algoritmo de Ordenamiento de Shell (Shell Sort).
+            4. [Merge Sort](./DISClib/Algorithms/Sorting/mergesort.py) Script que implementa el algoritmo de Ordenamiento por Unión (Merge Sort).
+            5. [Quick Sort](./DISClib/Algorithms/Sorting/quicksort.py) Script que implementa el algoritmo de Ordenamiento Rápido (quick sort).
+        3. [Trees](./DISClib/Algorithms/Trees) Carpeta con los algoritmos para administrar los árboles ADT.
+            1. [Traversal](./DISClib/Algorithms/Trees/traversal.py) Script que implementa algoritmos transversales para los recorridos de árboles binarios, incluye los recorridos preorden, inorder y postorder.
 
-    2. [Algorithms](./DISClib/Algorithms) Folder with the main algorithms implemented to handle the ADTs.
-        1. [Graphs](./DISClib/Algorithms/Graphs) Folder with the algorithms to handle the ADT Graph.
-            1. [DFS](./DISClib/Algorithms/Graphs/dfs.py) Script implementing the Depth First Search (DFS) algorithm.
-            2. [BFS](./DISClib/Algorithms/Graphs/bfs.py) Script implementing the Breath First Search (BFS) algorithm.
-            3. [DFO](./DISClib/Algorithms/Graphs/dfo.py) Script implementing the Depth First Order (DFO) topological sorting algorithm.
-            4. [Cycles](./DISClib/Algorithms/Graphs/cycles.py) Script implementing the Cycle Detection algorithm.
-            5. [SCC](./DISClib/Algorithms/Graphs/scc.py) Script implementing the Strongly Connected Components (SCC) algorithm.
-            6. [Prim](./DISClib/Algorithms/Graphs/prim.py) Script implementing the Prim's algorithm.
-            7. [Dijkstra](./DISClib/Algorithms/Graphs/dijkstra.py) Script implementing the Dijkstra's algorithm.
-            8. [Bellman-Ford](./DISClib/Algorithms/Graphs/bellmanford.py) Script implementing the Bellman-Ford algorithm.
-        2. [Sorting](./DISClib/Algorithms/Sorting) Folder with the algorithms implementing sorting for the ADT List.
-            1. [Selection Sort](./DISClib/Algorithms/Sorting/selectionsort.py) Script implementing the Selection Sort algorithm.
-            2. [Insertion Sort](./DISClib/Algorithms/Sorting/insertionsort.py) Script implementing the Insertion Sort algorithm.
-            3. [Shell Sort](./DISClib/Algorithms/Sorting/shellsort.py) Script implementing the Shell Sort algorithm.
-            4. [Merge Sort](./DISClib/Algorithms/Sorting/mergesort.py) Script implementing the Merge Sort algorithm.
-            5. [Quick Sort](./DISClib/Algorithms/Sorting/quicksort.py) Script implementing the Quick Sort algorithm.
-        3. [Trees](./DISClib/Algorithms/Trees) Folder with the algorithms to handle the ADT Trees.
-            1. [Traversal](./DISClib/Algorithms/Trees/traversal.py) Script implementing the Transversal algorithm for binary trees, it includes the preorder, inorder and postorder structure walkthrough.
+    3. [Data Structures](./DISClib/DataStructures) Carpeta con las principales estructuras de datos implementadas para soportar los ADTs en la librería.
+        1. [Array List](./DISClib/DataStructures/arraylist.py) Script que implementa el Arreglo (Array List) como estructura de datos.
+        2. [Single Linked List](./DISClib/DataStructures/singlelinkedlist.py) Script que implementa la Lista Sencillamente Encadenada (Single Linked List) como estructura de datos.
+        3. [Double Linked List](./DISClib/DataStructures/doublelinkedlist.py) Script que implementa la Lista Doblemente Encadenada (Double Linked List) como estructura de datos.
+        4. [Heap](./DISClib/DataStructures/heap.py) Script que implementa Montículo (Heap) como estructura de datos.
+        5. [Indexed Heap](./DISClib/DataStructures/indexheap.py) Script que implementa Montículo Indexado (Indexed Heap) como estructura de datos.
+        6. [Indexed MinPQ Node](./DISClib/DataStructures/iminpqnode.py) Script que implementa la estructura de datos para el nodo MinPQ. También, es utilizado para apoyar el funcionamiento del Montículo Indexado (Indexed Heap).
+        7. [Separate Chaining Hash Table](./DISClib/DataStructures/chaininghashtable.py) Script que implementa la Tabla de Hash por encadenamiento separado (Separate Chaining) como estructura de datos.
+        8. [Linear Probing Hash Table](./DISClib/DataStructures/probehashtable.py) Script que implementa la Tabla de Hash Por Sondeo Lineal (Linear Probing) como estructura de datos.
+        9. [Map Entry](./DISClib/DataStructures/mapentry.py) Script que implementa la estructura de datos de una entrada o valor de mapa para agregar a una tabla hash.
+        10. [Binary Search Tree (BST)](./DISClib/DataStructures/bst.py) Script que implementa la estructura de datos del árbol de búsqueda binaria (BST) para el ADT de mapa ordenado.
+        11. [BST Node](./DISClib/DataStructures/bstnode.py) Script que implementa el nodo de la estructura de datos BST y apoyar el funcionamiento del árbol de búsqueda binaria (BST).
+        12. [Red Black Tree (RBT)](./DISClib/DataStructures/rbt.py) Script que implementa la estructura de datos del árbol rojo-negro (RBT) para el ADT de mapa ordenado.
+        13. [RBT Node](./DISClib/DataStructures/rbtnode.py) Script que implementa el nodo de la estructura de datos RBT y apoyar el funcionamiento del árbol rojo-negro (RBT).
+        14. [Adjacency List](./DISClib/DataStructures/adjlist.py) Script que implementa la estructura de datos de la Lista de Adyacencia para el ADT Grafo.
+        15. [Edge](./DISClib/DataStructures/edge.py) Script que implementa la estructura de datos de Vértice o Nodo (Edge) de un grafo y apoya el funcionamiento del ADT grafo y su lista de adyacencia.
 
-    3. [Data Structures](./DISClib/DataStructures) Folder with the main data structures implemented to support the ADTs in the library.
-        1. [Array List](./DISClib/DataStructures/arraylist.py) Script implementing the Array List data structure.
-        2. [Single Linked List](./DISClib/DataStructures/singlelinkedlist.py) Script implementing the Single Linked List data structure.
-        3. [Double Linked List](./DISClib/DataStructures/doublelinkedlist.py) Script implementing the Double Linked List data structure.
-        4. [Heap](./DISClib/DataStructures/heap.py) Script implementing the Heap data structure.
-        5. [Indexed Heap](./DISClib/DataStructures/indexheap.py) Script implementing the Indexed Heap data structure.
-        6. [Indexed MinPQ Node](./DISClib/DataStructures/iminpqnode.py) Script implementing the Indexed MinPQ Node data structure to support the Indexed Heap implementation.
-        7. [Separate Chaining Hash Table](./DISClib/DataStructures/chaininghashtable.py) Script implementing the Separate Chaining Hash Table data structure.
-        8. [Linear Probing Hash Table](./DISClib/DataStructures/probehashtable.py) Script implementing the Linear Probing Hash Table data structure.
-        9. [Map Entry](./DISClib/DataStructures/mapentry.py) Script implementing the Map Entry data structure to support the Hash Table implementation.
-        10. [Binary Searhc Tree (BST)](./DISClib/DataStructures/bst.py) Script implementing the Binary Search Tree (BST) data structure for the ADT Ordered Map.
-        11. [BST Node](./DISClib/DataStructures/bstnode.py) Script implementing the BST Node data structure to support the Binary Search Tree (BST) implementation.
-        12. [Red Black Tree (RBT)](./DISClib/DataStructures/rbt.py) Script implementing the Red Black Tree (RBT) data structure for the ADT Ordered Map.
-        13. [RBT Node](./DISClib/DataStructures/rbtnode.py) Script implementing the RBT Node data structure to support the Red Black Tree (RBT) implementation.
-        14. [Adjacency List](./DISClib/DataStructures/adjlist.py) Script implementing the Adjacency List data structure for ADT Graph.
-        15. [Edge](./DISClib/DataStructures/edge.py) Script implementing the Edge data structure to support the Graph's Adjacency List implementation.
+    4. [Utils](./DISClib/Utils) Carpeta con las funcionalidades genéricas principales que apoyan el funcionamiento de los ADTs en la librería.
+        1. [Error Handling](./DISClib/Utils/error.py)  Script que implementa el control de errores para todas las funcionalidades de la librería.
 
-    4. [Utils](./DISClib/Utils) Folder with the main utilities implemented to support the ADTs in the library.
-        1. [Error Handling](./DISClib/Utils/error.py) Script implementing the Error Handling utility for all the libraries.
+2. [Test](./Test) Carpeta con las pruebas de la librería.
+    1. [List](./Test/list) Scripts para evaluar los ADT Listas.
+    2. [Queue](./Test/queue) Scripts para evaluar el ADT Cola.
+    3. [Stack](./Test/stack) Scripts para evaluar el ADT Pila.
+    4. [Map](./Test/map) Scripts para evaluar el ADT Mapa.
+    5. [Ordered Map](./Test/orderedmap) Scripts para evaluar el ADT Mapa Ordenado.
+    6. [Binary Search Tree](./Test/bst) Scripts para evaluar el ADT para el árbol de búsqueda binaria.
+    7. [MinPQ](./Test/minpq) Scripts para evaluar el ADT de la cola de prioridad mínima.
+    8. [Graph](./Test/graph) Scripts para evaluar el ADT Grafo.
 
-2. [Test](./Test) Folder with the tests for the library.
-    1. [List](./Test/list) Scripts to test the ADT Lists.
-    2. [Queue](./Test/queue) Scripts to test the ADT Queue.
-    3. [Stack](./Test/stack) Scripts to test the ADT Stack.
-    4. [Map](./Test/map) Scripts to test the ADT Map.
-    5. [Ordered Map](./Test/orderedmap) Scripts to test the ADT Ordered Map.
-    6. [Binary Search Tree](./Test/bst) Scripts to test the ADT Binary Search Tree.
-    7. [MinPQ](./Test/minpq) Scripts to test the ADT Min Priority Queue.
-    8. [Graph](./Test/graph) Scripts to test the ADT Graph.
-
-**NOTE:** the `config.py` scripts in the API are used to configure library's  build path and allows the Python interpreter to find the relative path in any condition. -->
+**NOTA:** `DISClib` utiliza los scripts `config.py` para configurar la ruta de compilación de la librería y permitirle al intérprete Python encontrar la ruta relativa en cualquier condición del sistema operativo.
 
 [Volver al inicio](#disclib)
 
+<!-- BUILT WITH -->
 ### Implementación
 
 Esta librería fue implementada con las siguientes tecnologías:
@@ -144,7 +142,7 @@ Como la librería no está orientada a objetos, debe importar la biblioteca del 
 
 Como principio de diseño **DISClib** minimiza el uso de librerías externas de Python en su implementación.
 
-Para ejecutar las pruebas en la carpeta 'Test', debe instalar el paquete 'Pytest'.
+Para ejecutar las pruebas en la carpeta `Test`, debe instalar el paquete `Pytest`.
 
   ```bash
   pip install pytest
@@ -152,6 +150,7 @@ Para ejecutar las pruebas en la carpeta 'Test', debe instalar el paquete 'Pytest
 
 [Volver al inicio](#disclib)
 
+<!-- INSTALLATION -->
 ### Instalación
 
 Por el momento, la librería **DISClib** está disponible como una dependencia local para su proyecto. Para instalarlo y usarlo debe seguir los siguientes pasos:
@@ -210,62 +209,53 @@ Si necesita más información, póngase en contacto con nosotros [en este correo
 
 <!-- ROADMAP -->
 ## Hoja de Ruta
-<!-- #TODO to translate -->
-TRABAJANDO!
-<!-- 
-The Road so far lead us to complete the following features:
 
-* [ ] To include examples for all modules in the repository [Demo y Ejemplos][demo-url].
-* [ ] To clean some code and make it more readable.
-* [ ] To standarize the functions and variables names throughout the library.
-* [ ] To improve the library the documentation.
-* [ ] To implement the Adjacency Matrix data structure for the ADT Graph.
+El camino hasta ahora nos llevó a querer completar las siguientes funcionalidades:
 
-See the [open issues](https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues) for a full list of proposed features (and known issues). -->
+* [ ] Incluir ejemplos para todos los módulos del repositorio [Demo y Ejemplos][demo-url].
+* [ ] Limpiar secciones de código y hacerlo más legible.
+* [ ] Estandarizar los nombres de funciones y variables en toda la librería.
+* [ ] Mejorar la documentación de la biblioteca.
+* [ ] Implementar la estructura de datos de la Matriz de Adyacencia para el ADT Grafo.
+
+Vea la lista de[funcionalidades pendientes][issues-url] para obtener una lista completa de las funcionalidades propuestas (y los problemas conocidos).
 
 [Volver al inicio](#disclib)
 
 <!-- CONTRIBUTING -->
 ## Contribuir
-<!-- #TODO to translate -->
-TRABAJANDO!
 
-<!-- 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Las contribuciones son las que hacen que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. **Agradecemos cualquier** contribución que hagas.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Si tiene una sugerencia para mejorar el proyecto, bifurque (Fork) el repositorio y cree una solicitud de extracción (Pull Request). También puede simplemente abrir un problema con la etiqueta "mejora".
+¡No olvides resaltar el proyecto marcando la estrella! ¡Gracias de nuevo!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request -->
+1. Bifurcar (Fork) el proyecto.
+2. Crear la rama (Branch) de la funcionalidad (`git checkout -b funcionalidad/increibleFuncionalidad`).
+3. Confirme (Commit) sus cambios (`git commit -m adicionar una nueva funcionalidad'`).
+4. Empuje (Push) los cambios a la rama (`git push origin funcionalidad/increibleFuncionalidad `).
+5. Abrir una solicitud de extracción (Pull Request).
 
 [Volver al inicio](#disclib)
 
 <!-- LICENSE -->
 ## Licencia
-<!-- #TODO to translate -->
-TRABAJANDO!
 
-<!-- Copyright 2020, Departamento de sistemas y Computación, Universidad de Los Andes.
-Developed for the class _"ISIS1225 - Estructuras de Datos y Algoritmos"_ or _"ISIS1225 - Data Structure and Algorithms"_ in english.
+Copyright 2020, Departamento de sistemas y Computación, Universidad de Los Andes.
+Desarrollado para la clase _"ISIS1225 - Estructuras de Datos y Algoritmos"_ o _"ISIS1225 - Data Structure and Algorithms"_ en inglés.
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+Este programa es software libre: puede redistribuirlo y/o modificarlo bajo los términos de la Licencia Pública General de GNU publicada por Free Software Foundation, ya sea la versión 3 de la Licencia, o (a su elección) cualquier versión posterior.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more information go to [GNU ORG][gnu-url]. -->
+Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA, sin siquiera la garantía implícita de COMERCIABILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Ver el [GNU General Public License](LICENSE) Para obtener más información, vaya a [GNU ORG][gnu-url].
 
 [Volver al inicio](#disclib)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Autores y Reconocimiento
-<!-- #TODO to translate -->
-TRABAJANDO!
 
-<!-- * [Dario Correal][dariocorreal-url] is the original author and main developer of the library.
-* [Santiago Arteaga][phillipus85-url] is a contributor and repository administrator. 
-* [Luis Florez][le99-url] is a contributor and developed examples and tutorials for the library. -->
+* [Dario Correal][dariocorreal-url] es el autor original y desarrollador principal de la librería.
+* [Santiago Arteaga][phillipus85-url] es colaborador y administrador de repositorios. 
+* [Luis Florez][le99-url] es colaborador y desarrolló los ejemplos y tutoriales para la librería.
 
 [Volver al inicio](#disclib)
 
