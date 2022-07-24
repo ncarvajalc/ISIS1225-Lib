@@ -51,7 +51,9 @@ Este proyecto se creó como una librería pedagógica para enseñar a los estudi
 TRABAJANDO!
 <!-- 
 The project is divided into four main parts:
+
 1. [DISClib](./DISClib) Root folder with the library implementation.
+
     1. [ADT](./DISClib/ADT) Folder with the main Abstract Data Types (ADT) implemented in the library.
         1. [List](./DISClib/ADT/list.py) Script implementing the ADT Lists in the library, configurable by Array List, Single Linked List and Double Linked List structures.
         2. [Queue](./DISClib/ADT/queue.py) Script implementing the ADT queue based in the ADT List.
@@ -98,7 +100,6 @@ The project is divided into four main parts:
         14. [Adjacency List](./DISClib/DataStructures/adjlist.py) Script implementing the Adjacency List data structure for ADT Graph.
         15. [Edge](./DISClib/DataStructures/edge.py) Script implementing the Edge data structure to support the Graph's Adjacency List implementation.
 
-
     4. [Utils](./DISClib/Utils) Folder with the main utilities implemented to support the ADTs in the library.
         1. [Error Handling](./DISClib/Utils/error.py) Script implementing the Error Handling utility for all the libraries.
 
@@ -114,25 +115,9 @@ The project is divided into four main parts:
 
 **NOTE:** the `config.py` scripts in the API are used to configure library's  build path and allows the Python interpreter to find the relative path in any condition. -->
 
-<!-- 
-#ISIS1225 - Librerias de soporte
-
-Este proyecto contiene los Tipos abstractos de datos, estructuras de datos y algoritmos requeridos por el curso ISIS1225-Estructuras de Datos y Algoritmos
-
--Lib
-Este directorio contiene todo el código de base que se entrega para el funcionamiento del curso.  Dentro de este directorio encuentran:
-    |-- ADT:  Directorio con los Tipos Abstractos de Datos del curso
-    |--DataStructures: Directorio con todas las estructuras de datos y archivos auxiliares para su     correcto funcionamiento
-    |--Algorithms: Implementación de los algoritmos vistos en el curso (por ejemplo algoritmos de ordenamiento)
-    |-- Utils: Funciones auxiliares para el funcionamiento de los TADs y estructuras de datos
--Test
-Este directorio contiene las pruebas realizadas a los TADs, Estructuras de Datos y Algoritmos. -->
-
 [Volver al inicio](#disclib)
 
 ### Implementación
-<!-- #TODO to translate -->
-TRABAJANDO!
 
 Esta librería fue implementada con las siguientes tecnologías:
   * `Mac OS` y `Windows 10` para el sistema operativo.
@@ -148,110 +133,78 @@ Finalmente, **DISClib** funciona entre las versiones `Python 3.6` y `Python 3.9`
 
 <!-- GETTING STARTED -->
 ## Introducción
-<!-- #TODO to translate -->
-TRABAJANDO!
 
-<!-- This section contains the steps to get started with the library. As is the case with any other library, you need to install the library and then import it in your project.
+Esta sección contiene los pasos para comenzar a utilizar la librería. Como es el caso de cualquier otra librería, debe instalarla y luego importarla manualmente en su proyecto.
 
-As the library is not Object Oriented, you need to import the library in your project as a module using the following steps: -->
+Como la librería no está orientada a objetos, debe importar la biblioteca del proyecto como un módulo siguiendo los pasos de [Instalación](#instalación).
 
-<!-- This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps. -->
 [Volver al inicio](#disclib)
 
 ### Prerrequisitos
-<!-- #TODO to translate -->
-TRABAJANDO!
 
-<!-- As a design principle **DISClib** minimize the use of Python external libraries in its implementation.
+Como principio de diseño **DISClib** minimiza el uso de librerías externas de Python en su implementación.
 
-To execute the tests in the `Test` folder, you need to install the `Pytest` package.
+Para ejecutar las pruebas en la carpeta 'Test', debe instalar el paquete 'Pytest'.
 
   ```bash
   pip install pytest
-  ``` -->
+  ```
 
-<!-- This is an example of how to list things you need to use the software and how to install them.
-
-* npm
-
-  ```sh
-  npm install npm@latest -g
-  ``` -->
 [Volver al inicio](#disclib)
 
 ### Instalación
-<!-- #TODO to translate -->
-TRABAJANDO!
 
-<!-- For the moment the **DISClib** is available as a local dependency in your project. To install it you can follow the next steps:
+Por el momento, la librería **DISClib** está disponible como una dependencia local para su proyecto. Para instalarlo y usarlo debe seguir los siguientes pasos:
 
-1. Create a new project folder.
-2. Clone the repo with the command:
+1. Cree una nueva carpeta de proyecto.
+2. Clone el repositorio con el comando:
 
    ```sh
    git clone https://github.com/ISIS1225DEVS/ISIS1225-Lib.git
    ```
 
-3. Move the **DISClib** folder to the project folder.
-4. Create a new Python file in the project folder.
-5. Import the necessary **DISClib** ADT modules into your project with the command:
+3. Mueva la carpeta **DISClib** a la carpeta del proyecto.
+4. Cree un nuevo archivo Python en la carpeta del proyecto.
+5. Importe los módulos ADT **DISClib** necesarios en su proyecto con las lineas de codigo:
 
    ```python
     from DISClib.ADT import list as lt
     from DISClib.ADT import map as mp
    ```
 
-6. Start coding! -->
-
-<!-- 3. Install NPM packages
-
-   ```sh
-   npm install
-   ```
-
-4. Enter your API in `config.js`
-
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ``` -->
+6. ¡Empieza a programar!
 
 [Volver al inicio](#disclib)
 
 <!-- USAGE EXAMPLES -->
 ## Uso
-<!-- #TODO to translate -->
-TRABAJANDO!
 
-<!-- DISCLib is a library that provides a set of ADT's to support the development and use of algorithms. Its intended as a teaching tool in the course [ISIS1225-Estructuras de Datos y Algoritmos][uniandes-url].
+**DISCLib** es una librería que proporciona un conjunto de ADT para ayudar a implementar y usar estructuras de datos y algoritmos. Su intención es ser una herramienta de enseñanza en el curso [ISIS1225-Estructuras de Datos y Algoritmos][uniandes-url].
 
-To check the laboratories repositories, go to the following links:
+Para consultar el uso de la librería puede ver los repositorios de los laboratorios, en los siguientes enlaces:
 
-  * [ISIS1225-SampleMVC][sample-mvc-url] MVC introduction laboratory.
-  * [ISIS1225-SampleConflicts][sample-conflicts-url] GitHub conflicts managment laboratory.
-  * [ISIS1225-SampleList][sample-list-url] ADT List laboratory.
-  * [ISIS1225-SampleSorts][sample-sort-url] ADT List sorting algorithms laboratory.
-  * [ISIS1225-sampleMap][sample-map-url] ADT Map laboratory.
-  * [ISIS1225-SampleCollision][sample-collision-url] ADT Ordered Map laboratory.
-  * [ISIS1225-SampleTree][sample-tree-url] ADT Ordered Map (BST and RBT) laboratory.
-  * [ISIS1225-sampleGraph][sample-graph-url] ADT Graph laboratory.
-  * [ISIS1225-SampleAlgorithm][sample-algorithm-url] ADT Graph algorithms laboratory. -->
-
-<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
+  * [ISIS1225-SampleMVC][sample-mvc-url] Laboratorio introductorio al patrón MVC.
+  * [ISIS1225-SampleConflicts][sample-conflicts-url] Laboratorio para solucionar conflictos de GitHub.
+  * [ISIS1225-SampleList][sample-list-url] Laboratorio introductorio al ADT listas.
+  * [ISIS1225-SampleSorts][sample-sort-url] Laboratorio para algoritmos de ordenamiento para ADT listas.
+  * [ISIS1225-sampleMap][sample-map-url] Laboratorio introductorio de ADT mapas.
+  * [ISIS1225-SampleCollision][sample-collision-url] Laboratorio para manejo de colisiones de ADT mapas.
+  * [ISIS1225-SampleTree][sample-tree-url] Laboratorio introductorio de los Mapas Ordenados (BST and RBT).
+  * [ISIS1225-sampleGraph][sample-graph-url] Laboratorio intorductorio para ADT Grafos.
+  * [ISIS1225-SampleAlgorithm][sample-algorithm-url] Laboratorio para algoritmos usados en el ADT Grafos
 
 [Volver al inicio](#disclib)
 
 <!-- CONTACT -->
 ## Contacto y Soporte
-<!-- #TODO to translate -->
-TRABAJANDO!
 
-<!-- For further information and contact, use the following links:
+Para más información y contactarnos, utilice los siguientes enlaces:
 
-  * Official Repository [DISClib][disclib-url].
-  * Repository for [Demo y Ejemplos][demo-url].
+  * Repositorio Oficial [DISClib][disclib-url].
+  * Repositorio para [Demo y Ejemplos][demo-url].
   
-If you require further information, please contact us [via this email](mailto:isis1225@uniandes.edu.co) -->
+Si necesita más información, póngase en contacto con nosotros [en este correo](mailto:isis1225@uniandes.edu.co)
+
 
 [Volver al inicio](#disclib)
 

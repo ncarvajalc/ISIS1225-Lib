@@ -111,7 +111,7 @@ The project is divided into four main parts:
     7. [MinPQ](./Test/minpq) Scripts to test the ADT Min Priority Queue.
     8. [Graph](./Test/graph) Scripts to test the ADT Graph.
 
-**NOTE:** the `config.py` scripts in the API are used to configure library's  build path and allows the Python interpreter to find the relative path in any condition.
+**NOTE:** the `config.py` scripts in the API are used to configure library's build path and allows the Python interpreter to find the relative path in any OS condition.
 
 [Back to top](#disclib)
 
@@ -135,7 +135,7 @@ Finally, **DISClib** works between `Python 3.6` and `Python 3.9` versions.
 
 This section contains the steps to get started with the library. As is the case with any other library, you need to install the library and then import it in your project.
 
-As the library is not Object Oriented, you need to import the library in your project as a module using the following steps:
+As the library is not Object Oriented, you need to import the library in your project as a module using the following steps in [Installation](#installation).
 
 <!-- This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps. -->
@@ -182,16 +182,16 @@ For the moment the **DISClib** is available as a local dependency in your projec
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-DISCLib is a library that provides a set of ADT's to support the development and use of algorithms. Its intended as a teaching tool in the course [ISIS1225-Estructuras de Datos y Algoritmos][uniandes-url].
+**DISCLib** is a library that provides a set of ADT's to support the development and use of algorithms. Its intended as a teaching tool in the course [ISIS1225-Estructuras de Datos y Algoritmos][uniandes-url].
 
 To check the laboratories repositories, go to the following links:
 
-  * [ISIS1225-SampleMVC][sample-mvc-url] MVC introduction laboratory.
-  * [ISIS1225-SampleConflicts][sample-conflicts-url] GitHub conflicts managment laboratory.
+  * [ISIS1225-SampleMVC][sample-mvc-url] MVC pattern introduction laboratory.
+  * [ISIS1225-SampleConflicts][sample-conflicts-url] GitHub conflicts solution laboratory.
   * [ISIS1225-SampleList][sample-list-url] ADT List laboratory.
   * [ISIS1225-SampleSorts][sample-sort-url] ADT List sorting algorithms laboratory.
   * [ISIS1225-sampleMap][sample-map-url] ADT Map laboratory.
-  * [ISIS1225-SampleCollision][sample-collision-url] ADT Ordered Map laboratory.
+  * [ISIS1225-SampleCollision][sample-collision-url] ADT Map collision method laboratory.
   * [ISIS1225-SampleTree][sample-tree-url] ADT Ordered Map (BST and RBT) laboratory.
   * [ISIS1225-sampleGraph][sample-graph-url] ADT Graph laboratory.
   * [ISIS1225-SampleAlgorithm][sample-algorithm-url] ADT Graph algorithms laboratory.
