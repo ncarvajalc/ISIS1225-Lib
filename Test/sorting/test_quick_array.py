@@ -28,6 +28,7 @@ from DISClib.Algorithms.Sorting import quicksort as sa
 
 @pytest.fixture
 def orderedlist():
+    # FIXME change file path using os,path.join()
     fname = cf.file_dir + '/Test/Data/' + 'list-small-ordered.csv'
     lst = lt.newList(datastructure='ARRAY_LIST',
                      key='book_id',
@@ -38,6 +39,7 @@ def orderedlist():
 
 @pytest.fixture
 def invertedlist():
+    # FIXME change file path using os,path.join()
     fname = cf.file_dir + '/Test/Data/' + 'list-small-inverted.csv'
     lst = lt.newList(datastructure='ARRAY_LIST',
                      key='book_id',
@@ -48,6 +50,7 @@ def invertedlist():
 
 @pytest.fixture
 def randomlist():
+    # FIXME change file path using os,path.join()
     fname = cf.file_dir + '/Test/Data/' + 'list-small-random.csv'
     lst = lt.newList(datastructure='ARRAY_LIST',
                      key='book_id',
