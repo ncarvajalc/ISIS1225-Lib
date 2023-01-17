@@ -64,30 +64,30 @@ def emptylist():
 
 
 def test_empty_sort(emptylist):
-    olist = sa.sort(emptylist, cmpfunction)
+    olist = sa.sort(emptylist, sort_crit)
     for elem in lt.iterator(olist):
         print(elem)
 
 
 def test_selection_ordered(orderedlist):
-    olist = sa.sort(orderedlist, cmpfunction)
+    olist = sa.sort(orderedlist, sort_crit)
     for elem in lt.iterator(olist):
         print(elem)
 
 
 def test_selection_inverted(invertedlist):
-    olist = sa.sort(invertedlist, cmpfunction)
+    olist = sa.sort(invertedlist, sort_crit)
     for elem in lt.iterator(olist):
         print(elem)
 
 
 def test_selection_random(randomlist):
-    olist = sa.sort(randomlist, cmpfunction)
+    olist = sa.sort(randomlist, sort_crit)
     for elem in lt.iterator(olist):
         print(elem)
 
 
-def cmpfunction(elem1, elem2):
+def sort_crit(elem1, elem2):
     if (int(elem1['book_id']) < int(elem2['book_id'])):
         return True
     return False
