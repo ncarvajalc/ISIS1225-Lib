@@ -34,7 +34,7 @@ def map2():
     capacity = 5
     map = ht.newMap(numelements=capacity,
                     maptype='CHAINING',
-                    comparefunction=cmpkeys)
+                    cmpfunction=cmpkeys)
 
     ht.put(map, '1', 'title 1')
     ht.put(map, '2', 'title 2')
