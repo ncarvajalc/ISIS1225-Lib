@@ -45,7 +45,7 @@ def test_invalid_list():
     with pytest.raises(Exception) as excinfo:
         lt.newList(datastructure="INVALID", cmpfunction=cmpfunction)
     assert (
-        f"Tipo de estructura de datos no soportada. Solo se soportan: {", ".join(switch_module.keys())}" in str(excinfo.value)
+        f"Tipo de estructura de datos no soportada. Solo se soportan: {', '.join(switch_module.keys())}" in str(excinfo.value)
         in str(excinfo.value)
     )
 
