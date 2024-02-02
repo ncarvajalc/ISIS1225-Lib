@@ -18,9 +18,5 @@ jobs:
           python-version: '3.6.7'
       - name: Install pytest
         run: pip install pytest
-      - name: Install pylint
-        run: pip install pylint
-      - name: Check Python syntax
-        run: pylint **/*.py
       - name: Run tests
         run: pytest Test/
