@@ -406,7 +406,7 @@ def listSelector(datastructure):
 
     if ds is None:
         raise Exception(
-            "Tipo de estructura de datos no soportada. Solo se soportan: ARRAY_LIST, SINGLE_LINKED y DOUBLE_LINKED."
+            f"Tipo de estructura de datos no soportada. Solo se soportan: {", ".join(switch_module.keys())}"
         )
 
     module = importlib.import_module(ds, package="DISClib.DataStructures")

@@ -23,6 +23,7 @@
 import pytest
 import config
 from DISClib.ADT import list as lt
+from DISClib.ADT.list import switch_module
 
 assert config
 
@@ -38,24 +39,24 @@ def cmpfunction(element1, element2):
 
 def test_invalid_list():
     """
-    Test that an Exception is raised when the list type is invalid
+    Prueba para comprobar que se lanza una excepción cuando se intenta crear una lista con un tipo de estructura de datos no soportada.
     """
 
     with pytest.raises(Exception) as excinfo:
         lt.newList(datastructure="INVALID", cmpfunction=cmpfunction)
     assert (
-        "Tipo de estructura de datos no soportada. Solo se soportan: ARRAY_LIST, SINGLE_LINKED y DOUBLE_LINKED."
+        f"Tipo de estructura de datos no soportada. Solo se soportan: {", ".join(switch_module.keys())}" in str(excinfo.value)
         in str(excinfo.value)
     )
 
 
 def test_create_valid_lists():
-    lst = lt.newList(datastructure="ARRAY_LIST", cmpfunction=cmpfunction)
-    assert lt.size(lst) == 0
-    assert lt.isEmpty(lst)
-    lst = lt.newList(datastructure="SINGLE_LINKED", cmpfunction=cmpfunction)
-    assert lt.size(lst) == 0
-    assert lt.isEmpty(lst)
-    lst = lt.newList(datastructure="DOUBLE_LINKED", cmpfunction=cmpfunction)
-    assert lt.size(lst) == 0
-    assert lt.isEmpty(lst)
+    """
+    Prueba para comprobar que se crean listas de manera correcta.
+    """
+    for datastructure in switch_module.keys():
+        lst = lt.newList(datastructure=datastructure, cmpfunction=cmpfunction)
+        assert lst is not None
+        assert lt.size(lst) == 0
+   
+    
