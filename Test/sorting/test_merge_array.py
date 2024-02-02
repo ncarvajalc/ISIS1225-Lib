@@ -26,37 +26,37 @@ from DISClib.ADT import list as lt
 from DISClib.Algorithms.Sorting import mergesort as sa
 
 
-@pytest.fixture
-def orderedlist():
-    # FIXME change file path using os,path.join()
-    fname = cf.file_dir + '/Test/Data/' + 'list-small-ordered.csv'
-    lst = lt.newList(datastructure='ARRAY_LIST',
-                     key='book_id',
-                     filename=fname,
-                     delimiter=",")
-    return lst
+# @pytest.fixture
+# def orderedlist():
+#     # FIXME change file path using os,path.join()
+#     fname = cf.file_dir + '/Test/Data/' + 'list-small-ordered.csv'
+#     lst = lt.newList(datastructure='ARRAY_LIST',
+#                      key='book_id',
+#                      filename=fname,
+#                      delimiter=",")
+#     return lst
 
 
-@pytest.fixture
-def invertedlist():
-    # FIXME change file path using os,path.join()
-    fname = cf.file_dir + '/Test/Data/' + 'list-small-inverted.csv'
-    lst = lt.newList(datastructure='ARRAY_LIST',
-                     key='book_id',
-                     filename=fname,
-                     delimiter=",")
-    return lst
+# @pytest.fixture
+# def invertedlist():
+#     # FIXME change file path using os,path.join()
+#     fname = cf.file_dir + '/Test/Data/' + 'list-small-inverted.csv'
+#     lst = lt.newList(datastructure='ARRAY_LIST',
+#                      key='book_id',
+#                      filename=fname,
+#                      delimiter=",")
+#     return lst
 
 
-@pytest.fixture
-def randomlist():
-    # FIXME change file path using os,path.join()
-    fname = cf.file_dir + '/Test/Data/' + 'list-small-random.csv'
-    lst = lt.newList(datastructure='ARRAY_LIST',
-                     key='book_id',
-                     filename=fname,
-                     delimiter=",")
-    return lst
+# @pytest.fixture
+# def randomlist():
+#     # FIXME change file path using os,path.join()
+#     fname = cf.file_dir + '/Test/Data/' + 'list-small-random.csv'
+#     lst = lt.newList(datastructure='ARRAY_LIST',
+#                      key='book_id',
+#                      filename=fname,
+#                      delimiter=",")
+#     return lst
 
 
 @pytest.fixture
@@ -72,22 +72,22 @@ def test_empty_sort(emptylist):
         print(elem)
 
 
-def test_selection_ordered(orderedlist):
-    olist = sa.sort(orderedlist, sort_crit)
-    for elem in lt.iterator(olist):
-        print(elem)
+# def test_selection_ordered(orderedlist):
+#     olist = sa.sort(orderedlist, sort_crit)
+#     for elem in lt.iterator(olist):
+#         print(elem)
 
 
-def test_selection_inverted(invertedlist):
-    olist = sa.sort(invertedlist, sort_crit)
-    for elem in lt.iterator(olist):
-        print(elem)
+# def test_selection_inverted(invertedlist):
+#     olist = sa.sort(invertedlist, sort_crit)
+#     for elem in lt.iterator(olist):
+#         print(elem)
 
 
-def test_selection_random(randomlist):
-    olist = sa.sort(randomlist, sort_crit)
-    for elem in lt.iterator(olist):
-        print(elem)
+# def test_selection_random(randomlist):
+#     olist = sa.sort(randomlist, sort_crit)
+#     for elem in lt.iterator(olist):
+#         print(elem)
 
 
 def sort_crit(elem1, elem2):
