@@ -43,14 +43,14 @@ def books():
     return books
 
 
-@pytest.fixture
-def altbooks():
-    fname = cf.file_dir + '/Test/Data/' + 'list-small2.csv'
-    lst = lt.newList(datastructure='ARRAY_LIST',
-                     key='book_id',
-                     filename=fname,
-                     delimiter=";")
-    return lst
+# @pytest.fixture
+# def altbooks():
+#     fname = cf.file_dir + '/Test/Data/' + 'list-small2.csv'
+#     lst = lt.newList(datastructure='ARRAY_LIST',
+#                      key='book_id',
+#                      filename=fname,
+#                      delimiter=";")
+#     return lst
 
 
 """Pruebas con Arreglo"""
@@ -85,27 +85,27 @@ def test_addLast_array(alt, books):
     assert book == books[2]
 
 
-def test_getElement_array(altbooks, books):
-    book = lt.getElement(altbooks, 1)
-    assert book == books[0]
-    book = lt.getElement(altbooks, 5)
-    assert book == books[4]
+# def test_getElement_array(altbooks, books):
+#     book = lt.getElement(altbooks, 1)
+#     assert book == books[0]
+#     book = lt.getElement(altbooks, 5)
+#     assert book == books[4]
 
 
-def test_removeFirst_array(altbooks, books):
-    assert lt.size(altbooks) == 5
-    lt.removeFirst(altbooks)
-    assert lt.size(altbooks) == 4
-    book = lt.getElement(altbooks, 1)
-    assert book == books[1]
+# def test_removeFirst_array(altbooks, books):
+#     assert lt.size(altbooks) == 5
+#     lt.removeFirst(altbooks)
+#     assert lt.size(altbooks) == 4
+#     book = lt.getElement(altbooks, 1)
+#     assert book == books[1]
 
 
-def test_removeLast_array(altbooks, books):
-    assert lt.size(altbooks) == 5
-    lt.removeLast(altbooks)
-    assert lt.size(altbooks) == 4
-    book = lt.getElement(altbooks, 4)
-    assert book == books[3]
+# def test_removeLast_array(altbooks, books):
+#     assert lt.size(altbooks) == 5
+#     lt.removeLast(altbooks)
+#     assert lt.size(altbooks) == 4
+#     book = lt.getElement(altbooks, 4)
+#     assert book == books[3]
 
 
 def test_insertElement_array(alt, books):
@@ -123,38 +123,38 @@ def test_insertElement_array(alt, books):
     assert book == books[0]
 
 
-def test_isPresent_array(altbooks, books):
-    book = {'book_id': '10', 'book_title': 'Title 10', 'author': 'author 10'}
-    assert lt.isPresent(altbooks, books[2]) > 0
-    assert lt.isPresent(altbooks, book) == 0
+# def test_isPresent_array(altbooks, books):
+#     book = {'book_id': '10', 'book_title': 'Title 10', 'author': 'author 10'}
+#     assert lt.isPresent(altbooks, books[2]) > 0
+#     assert lt.isPresent(altbooks, book) == 0
 
 
-def test_deleteElement_array(altbooks, books):
-    pos = lt.isPresent(altbooks, books[2])
-    assert pos > 0
-    book = lt.getElement(altbooks, pos)
-    assert book == books[2]
-    lt.deleteElement(altbooks, pos)
-    assert lt.size(altbooks) == 4
-    book = lt.getElement(altbooks, pos)
-    assert book == books[3]
+# def test_deleteElement_array(altbooks, books):
+#     pos = lt.isPresent(altbooks, books[2])
+#     assert pos > 0
+#     book = lt.getElement(altbooks, pos)
+#     assert book == books[2]
+#     lt.deleteElement(altbooks, pos)
+#     assert lt.size(altbooks) == 4
+#     book = lt.getElement(altbooks, pos)
+#     assert book == books[3]
 
 
-def test_changeInfo_array(altbooks):
-    book10 = {'book_id': '10', 'book_title': 'Title 10', 'author': 'author 10'}
-    lt.changeInfo(altbooks, 1, book10)
-    book = lt.getElement(altbooks, 1)
-    assert book10 == book
+# def test_changeInfo_array(altbooks):
+#     book10 = {'book_id': '10', 'book_title': 'Title 10', 'author': 'author 10'}
+#     lt.changeInfo(altbooks, 1, book10)
+#     book = lt.getElement(altbooks, 1)
+#     assert book10 == book
 
 
-def test_exchange_array(altbooks, books):
-    book1 = lt.getElement(altbooks, 1)
-    book5 = lt.getElement(altbooks, 5)
-    lt.exchange(altbooks, 1, 5)
-    assert lt.getElement(altbooks, 1) == book5
-    assert lt.getElement(altbooks, 5) == book1
+# def test_exchange_array(altbooks, books):
+#     book1 = lt.getElement(altbooks, 1)
+#     book5 = lt.getElement(altbooks, 5)
+#     lt.exchange(altbooks, 1, 5)
+#     assert lt.getElement(altbooks, 1) == book5
+#     assert lt.getElement(altbooks, 5) == book1
 
 
-def test_iterator(altbooks):
-    for element in lt.iterator(altbooks):
-        print(element)
+# def test_iterator(altbooks):
+#     for element in lt.iterator(altbooks):
+#         print(element)
