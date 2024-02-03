@@ -18,5 +18,8 @@ jobs:
           python-version: '3.6.7'
       - name: Install pytest
         run: pip install pytest
+      - name: Check Python syntax
+        run: |
+          python -m py_compile $(find . -name '*.py')
       - name: Run tests
         run: pytest Test/
