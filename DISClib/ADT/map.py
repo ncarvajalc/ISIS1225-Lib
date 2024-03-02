@@ -27,6 +27,7 @@
 
 import config
 import importlib
+
 assert config
 
 """
@@ -37,11 +38,13 @@ assert config
 """
 
 
-def newMap(numelements=17,
-           prime=109345121,
-           maptype='CHAINING',
-           loadfactor=0.5,
-           cmpfunction=None):
+def newMap(
+    numelements=17,
+    prime=109345121,
+    maptype="CHAINING",
+    loadfactor=0.5,
+    cmpfunction=None,
+):
     """Crea una tabla de símbolos (map) sin orden
 
     Args:
@@ -56,15 +59,11 @@ def newMap(numelements=17,
         Exception
     """
     ht = mapSelector(maptype)
-    return ht.newMap(numelements,
-                     prime,
-                     loadfactor,
-                     cmpfunction,
-                     ht)
+    return ht.newMap(numelements, prime, loadfactor, cmpfunction, ht)
 
 
 def put(map, key, value):
-    """ Ingresa una pareja llave,valor a la tabla de hash.
+    """Ingresa una pareja llave,valor a la tabla de hash.
     Si la llave ya existe en la tabla, se reemplaza el valor
 
     Args:
@@ -76,11 +75,11 @@ def put(map, key, value):
     Raises:
         Exception
     """
-    return map['datastructure'].put(map, key, value)
+    return map["datastructure"].put(map, key, value)
 
 
 def get(map, key):
-    """ Retorna la pareja llave, valor, cuya llave sea igual a key
+    """Retorna la pareja llave, valor, cuya llave sea igual a key
     Args:
         map: El map a donde se guarda la pareja
         key: la llave asociada a la pareja
@@ -90,11 +89,11 @@ def get(map, key):
     Raises:
         Exception
     """
-    return map['datastructure'].get(map, key)
+    return map["datastructure"].get(map, key)
 
 
 def remove(map, key):
-    """ Elimina la pareja llave,valor, donde llave == key.
+    """Elimina la pareja llave,valor, donde llave == key.
     Args:
         map: El map a donde se guarda la pareja
         key: la llave asociada a la pareja
@@ -104,11 +103,11 @@ def remove(map, key):
     Raises:
         Exception
     """
-    return map['datastructure'].remove(map, key)
+    return map["datastructure"].remove(map, key)
 
 
 def contains(map, key):
-    """ Retorna True si la llave key se encuentra en el map
+    """Retorna True si la llave key se encuentra en el map
         o False en caso contrario.
     Args:
         map: El map a donde se guarda la pareja
@@ -119,11 +118,11 @@ def contains(map, key):
     Raises:
         Exception
     """
-    return map['datastructure'].contains(map, key)
+    return map["datastructure"].contains(map, key)
 
 
 def size(map):
-    """  Retorna  el número de entradas en la tabla de hash.
+    """Retorna  el número de entradas en la tabla de hash.
     Args:
         map: El map
     Returns:
@@ -131,11 +130,11 @@ def size(map):
     Raises:
         Exception
     """
-    return map['datastructure'].size(map)
+    return map["datastructure"].size(map)
 
 
 def isEmpty(map):
-    """ Informa si la tabla de hash se encuentra vacía
+    """Informa si la tabla de hash se encuentra vacía
     Args:
         map: El map
     Returns:
@@ -144,7 +143,7 @@ def isEmpty(map):
     Raises:
         Exception
     """
-    return map['datastructure'].isEmpty(map)
+    return map["datastructure"].isEmpty(map)
 
 
 def keySet(map):
@@ -158,7 +157,7 @@ def keySet(map):
     Raises:
         Exception
     """
-    return map['datastructure'].keySet(map)
+    return map["datastructure"].keySet(map)
 
 
 def valueSet(map):
@@ -172,7 +171,7 @@ def valueSet(map):
     Raises:
         Exception
     """
-    return map['datastructure'].valueSet(map)
+    return map["datastructure"].valueSet(map)
 
 
 """
@@ -191,5 +190,11 @@ def mapSelector(datastructure):
     seleccionada
     """
     ds = switch_module.get(datastructure)
+
+    if ds is None:
+        raise Exception(
+            f"Tipo de estructura de datos no soportada. Solo se soportan: {', '.join(switch_module.keys())}"
+        )
+
     module = importlib.import_module(ds, package="DISClib.DataStructures")
     return module

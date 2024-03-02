@@ -22,28 +22,25 @@
 
 import pytest
 import config
-from DISClib.ADT import list as lt
-from DISClib.ADT.list import switch_module
+from DISClib.ADT import map as ht
+from DISClib.ADT.map import switch_module
+
 
 assert config
 
-
-def cmpfunction(element1, element2):
-    if element1["book_id"] == element2["book_id"]:
-        return 0
-    elif element1["book_id"] < element2["book_id"]:
-        return -1
-    else:
-        return 1
+capacity = 50
+loadfactor = 2
 
 
-def test_invalid_list():
+def test_invalid_map():
     """
-    Prueba para comprobar que se lanza una excepción cuando se intenta crear una lista con un tipo de estructura de datos no soportada.
+    Prueba para comprobar que se lanza una excepción cuando se intenta crear un mapa con un tipo de estructura de datos no soportada.
     """
 
     with pytest.raises(Exception) as excinfo:
-        lt.newList(datastructure="INVALID", cmpfunction=cmpfunction)
+
+        ht.newMap(numelements=capacity, maptype="INVALID", loadfactor=loadfactor)
+
     assert (
         f"Tipo de estructura de datos no soportada. Solo se soportan: {', '.join(switch_module.keys())}"
         in str(excinfo.value)
@@ -52,9 +49,11 @@ def test_invalid_list():
 
 def test_create_valid_lists():
     """
-    Prueba para comprobar que se crean listas de manera correcta.
+    Prueba para comprobar que se crean mapas de manera correcta.
     """
     for datastructure in switch_module.keys():
-        lst = lt.newList(datastructure=datastructure, cmpfunction=cmpfunction)
-        assert lst is not None
-        assert lt.size(lst) == 0
+        mp = ht.newMap(
+            numelements=capacity, maptype=datastructure, loadfactor=loadfactor
+        )
+        assert mp is not None
+        assert ht.size(mp) == 0
