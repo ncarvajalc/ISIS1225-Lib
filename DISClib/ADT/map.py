@@ -139,8 +139,8 @@ def isEmpty(map):
     Args:
         map: El map
     Returns:
-        True: El map esta vació
-        False: El map no esta vació
+        True: El map esta vacío
+        False: El map no esta vacío
     Raises:
         Exception
     """
@@ -194,7 +194,7 @@ def mapSelector(datastructure):
 
     if ds is None:
         raise Exception(
-            f'Tipo de estructura de datos no soportada. Solo se soportan: {', '.join(switch_module.keys())}'
+            f"Tipo de estructura de datos no soportada. Solo se soportan: {', '.join(switch_module.keys())}"
         )
 
     module = importlib.import_module(ds, package="DISClib.DataStructures")
